@@ -6,13 +6,14 @@ import Form from "../components/Form/Form";
 function App() {
   //State
   const [nameInput, setNameInput] = useState('');
+  const [companyInput, setCompanyInput] = useState('');
   const [persons, setPersons] = useState([]);
 
   return (
     <div>
-      <h1>Guests List</h1>
-      <Form nameInput={nameInput} setNameInput={setNameInput} persons={persons} setPersons={setPersons} />
+      <h1>Guests List</h1>      
       <Persons persons={persons} setPersons={setPersons} />
+      <Form nameInput={nameInput} setNameInput={setNameInput} companyInput={companyInput} setCompanyInput={setCompanyInput} persons={persons} setPersons={setPersons} />
     </div>
   );
 

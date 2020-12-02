@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Person.css";
 
-const Person = ( {nameInput, person, persons, setPersons} ) => {  
+const Person = ( {person, persons, setPersons} ) => {  
   const deletePerson = () => {
     setPersons(persons.filter((state) => state.id !== person.id));
   };
@@ -9,7 +9,7 @@ const Person = ( {nameInput, person, persons, setPersons} ) => {
   return (        
     <div className={classes.Person}>
       <h3>{person.name}</h3>
-      {/* <h4>{company}</h4> */}
+      <h4>{person.company}</h4>
       <button onClick={deletePerson}>Check</button> 
     </div>
   );

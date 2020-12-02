@@ -1,7 +1,7 @@
 import React from 'react';
 import Person from './Person/Person';
 
-const Persons = ({ name, persons, setPersons}) => {
+const Persons = ({ name, company, persons, setPersons}) => {
 
   return (              
     <div>
@@ -9,6 +9,7 @@ const Persons = ({ name, persons, setPersons}) => {
         <Person 
           setPersons={setPersons}
           name={name}
+          company={company}
           person={person}
           persons={persons}
           key={person.id}
