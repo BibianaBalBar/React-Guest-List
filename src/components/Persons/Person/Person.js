@@ -1,23 +1,19 @@
-import React, { Component } from "react";
-
+import React from "react";
 import classes from "./Person.css";
 
-class Person extends Component {  
-  render() {
-    console.log("[Person.js] rendering...")
-    return (        
-      <div className={classes.Person}>
-        <p onClick={this.props.click}>
-          I'm {this.props.name} and I am {this.props.age} years old!
-        </p>
-        <p>{this.props.children}</p>
-        <input 
-          type='text'
-          onChange={this.props.changed} 
-          value={this.props.name} />
-      </div>
-    );
-  }
+const Person = ( {nameInput, person, persons, setPersons} ) => {  
+  const deletePerson = () => {
+    setPersons(persons.filter((state) => state.id !== person.id));
+  };
+  
+  return (        
+    <div className={classes.Person}>
+      <h3>{person.name}</h3>
+      {/* <h4>{company}</h4> */}
+      <button onClick={deletePerson}>Check</button> 
+    </div>
+  );
+  
 };
 
 export default Person;
