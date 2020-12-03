@@ -1,3 +1,14 @@
+# Guest List - React
+
+Simple Guest List built with React.js
+## This project was built with the purpose of learning and experimenting with react.
+
+![guest-list](https://github.com/BibianaBalBar/React-Guest-List/blob/main/img/guestlist.gif)
+
+
+    //////////////////////
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
