@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from "./Form.css";
 import { v4 as uuidv4 } from 'uuid';
 
 const Form = ({ persons, setPersons, nameInput, setNameInput, companyInput, setCompanyInput }) => {
@@ -16,22 +17,23 @@ const Form = ({ persons, setPersons, nameInput, setNameInput, companyInput, setC
   };
 
   return (
-      <form onSubmit={submitHandler}>
-        <label htmlFor="name">Name</label>
+      <form  className={classes.formContainer} onSubmit={submitHandler}>
+        <label htmlFor="name">Name: </label>
         <input
           type="text"
           name="name"
           id="name"
           value={nameInput}
           onChange={guestInputHandler} />
-        <label htmlFor="company">Company</label>
+        <br/>
+        <label htmlFor="company">Company: </label>
         <input
           type="text"
           name="company"
           id="company"
           value={companyInput}
           onChange={guestCompanyInputHandler} />
-          
+        <br/>
         <button>Submit</button>
       </form>
     );

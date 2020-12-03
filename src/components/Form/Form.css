@@ -1,0 +1,33 @@
+.formContainer {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: rgb(56, 56, 56);
+  color: white;
+  box-shadow: 0 2px 3px #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  font-size: 1.2rem;
+  border-radius: 10%;
+}
+
+.formContainer button {
+  padding: 1rem;
+  border-radius: 10%;
+  background:blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1617px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

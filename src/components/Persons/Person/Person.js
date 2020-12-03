@@ -7,8 +7,8 @@ const Person = ( {person, persons, setPersons} ) => {
   };
   
   return (        
-    <div className={classes.Person}>
-      <h3>{person.name}</h3>
+    <div className={classes.Person}>      
+      <h2>{person.name}</h2>      
       <h4>{person.company}</h4>
       <button onClick={deletePerson}>Check</button> 
     </div>

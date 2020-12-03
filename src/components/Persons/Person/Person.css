@@ -1,11 +1,24 @@
 .Person {
-  width: 60%;
-  margin: 16px auto;
+  font-family: 'Courier New', Courier, monospace;
+  width: 70%;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
-  padding: 16px;
   text-align: center;  
+  padding-bottom: 0.5rem;  
+  background: #F2F2F2;
+  margin: 1rem;
 }
+
+.Person button {
+  padding: 0.5rem;
+  border-radius: 10%;
+  background: rgb(27, 144, 216);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
 
 @media (min-width: 500px) {
   .Person {

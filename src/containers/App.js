@@ -10,10 +10,13 @@ function App() {
   const [persons, setPersons] = useState([]);
 
   return (
-    <div>
-      <h1>Guests List</h1>      
-      <Persons persons={persons} setPersons={setPersons} />
-      <Form nameInput={nameInput} setNameInput={setNameInput} companyInput={companyInput} setCompanyInput={setCompanyInput} persons={persons} setPersons={setPersons} />
+    <div className={classes.App}>
+      <h1>GUEST LIST</h1> 
+           
+        <Form nameInput={nameInput} setNameInput={setNameInput} companyInput={companyInput} setCompanyInput={setCompanyInput} persons={persons} setPersons={setPersons} />
+        <Persons persons={persons} setPersons={setPersons} />
+      
+      
     </div>
   );
 
